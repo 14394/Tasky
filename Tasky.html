@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Management App</title>
+  <link rel="stylesheet" href="Tasky.css">
+</head>
+<body>
+  <header>
+    <h1>Tasky</h1>
+    <button id="logoutBtn" style="display: none;">Logout</button>
+  </header>
+  
+  <div id="loginContainer">
+    <h2>Login</h2>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="loginBtn">Login</button>
+    <button id="signupBtn">Sign Up</button>
+  </div>
+
+  <div id="tasksContainer" style="display: none;">
+    <h2>Tasks</h2>
+    <ul id="taskList"></ul>
+    <form id="taskForm">
+      <input type="text" id="taskInput" placeholder="New task">
+      <button type="submit">Add Task</button>
+    </form>
+  </div>
+
+  <script src="Tasky.mjs"></script>
+</body>
+</html>
